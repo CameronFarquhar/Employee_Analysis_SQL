@@ -62,3 +62,10 @@ ON de.emp_no = e.emp_no
 JOIN departments AS d
 ON d.dept_no = de.dept_no
 WHERE d.dept_no = 'd005';
+
+--  frequency count of employee last names
+
+SELECT last_name, COUNT(last_name) AS "Last Name Occurrence"
+FROM employees AS e
+GROUP BY e.last_name
+ORDER BY "Last Name Occurrence" DESC;
