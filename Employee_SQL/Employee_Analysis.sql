@@ -72,3 +72,8 @@ SELECT last_name, COUNT(last_name) AS "Last Name Occurrence"
 FROM employees AS e
 GROUP BY e.last_name
 ORDER BY "Last Name Occurrence" DESC;
+
+-- searching my own employee number
+SELECT first_name, last_name, birth_date, hire_date, sex
+FROM employees
+WHERE emp_no = 499942;
