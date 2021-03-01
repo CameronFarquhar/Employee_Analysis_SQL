@@ -6,9 +6,6 @@ INNER JOIN employees AS e ON
 e.emp_no = s.emp_no;
 
 -- first name, last name, and hire date for employees who were hired in 1986.
--- SELECT e.first_name, e.last_name, e.hire_date
--- FROM employees AS e
--- WHERE hire_date = year('1986');
 
 SELECT first_name,last_name,hire_date
 FROM employees
