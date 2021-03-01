@@ -10,6 +10,10 @@ e.emp_no = s.emp_no;
 -- FROM employees AS e
 -- WHERE hire_date = year('1986');
 
+SELECT first_name,last_name,hire_date
+FROM employees
+WHERE extract(year from hire_date)=1986;
+
 -- the manager of each department with the following information: 
 -- department number, department name, the manager's employee number, last name, first name
 
@@ -72,8 +76,3 @@ SELECT last_name, COUNT(last_name) AS "Last Name Occurrence"
 FROM employees AS e
 GROUP BY e.last_name
 ORDER BY "Last Name Occurrence" DESC;
-
--- searching my own employee number
-SELECT first_name, last_name, birth_date, hire_date, sex
-FROM employees
-WHERE emp_no = 499942;
