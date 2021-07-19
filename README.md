@@ -1,4 +1,5 @@
 # Employee_Analysis_SQL
+![surfs-up.png](Employee_SQL/ScreenshotERD.png)
 
 In this analaysis, I was given 6 CSV files to analyze. I created a schema using primary and foreign keys to reference each 
 table against one another and found different metrics base off of speccified parameters. After creating a histogram and 
